@@ -1,17 +1,17 @@
-peso = float(input("Digite el peso de la persona : " ))
-estatura = float(input("Digite la estatura de la persona :"))
-mc = float(input(peso/(estatura/2)))
-if mc<18.5:
-    print("Esta en bajo :", mc)
-elif mc>18.5 and mc<24.9:
-    print("Esta normal : ", mc)
-elif mc>25 and mc<29.9:
-    print("Esta en sobrepeso: ", mc)
-elif mc>30 and mc<34.9:
-    print("Esta en obesidad 1 : ", mc )
-elif mc>35 and mc<39.9:
-    print("Esta en obesidad 2 :", mc)
-elif mc>40 and mc<49.9:
-    print("Esta en obesidad 3 : ", mc)
-elif mc>50:
-    print("Esta en obesidad 4 : ", mc)
+peso=float(input("Ingrese el peso: "))
+estatura=float(input("Ingrese la estatura: "))
+imc=peso/(estatura*estatura)
+if imc<18.5:
+    print(imc," Bajo de peso")
+elif imc>=18.5 and imc<24.9:
+    print(imc,"Normal")
+elif imc>=25 and imc<29.9:
+    print(imc," Sobrepeso")
+elif imc>=30 and imc<34.9:
+    print(imc," Obesidad I")
+elif imc>=35 and imc<39.9:
+    print(imc," Obesidad II")
+elif imc>=40 and imc<49.9:
+    print(imc," Obesidad III")
+else:
+    print(imc," Obesidad IV")
